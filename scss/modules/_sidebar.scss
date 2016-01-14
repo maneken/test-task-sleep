@@ -1,0 +1,80 @@
+.sidebar {
+	width: 20%;
+	@extend .col;
+	background: #e8f0f6;
+	padding-bottom: 20px;
+}
+.sidebar__title {
+	text-transform: uppercase;
+	font-size: $primary-font-size + 8;
+	font-weight: normal;
+	background: #68a3c8;
+	background: -moz-linear-gradient(top,  #68a3c8 0%, #cfe0f0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #68a3c8 0%,#cfe0f0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #68a3c8 0%,#cfe0f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68a3c8', endColorstr='#cfe0f0',GradientType=0 ); /* IE6-9 */
+	padding: 3px 8px;
+	margin: 0;
+}
+.sidebar__menu,
+.sidebar__submenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar__menu {
+	margin-bottom: 18px;
+}
+.sidebar__menu-item,
+.sidebar__submenu-item {
+	padding: 3px 5px 5px;
+	border-top: 1px solid #e0e0e0;
+}
+.sidebar__menu-link {
+	color: #000;
+	font-weight: bold;
+	vertical-align: middle;
+
+	&:hover {
+		text-decoration: underline;
+		color: $link-color-hover;
+	}
+}
+.sidebar__menu-item.active .sidebar__menu-link {
+	@extend .sidebar__menu-link:hover;
+}
+.sidebar__submenu {
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-top: 5px;
+	display: none;
+}
+.sidebar__submenu-item {
+	font-size: $primary-font-size - 1;
+	padding: 4px 6px 6px 30px;
+	font-weight: bold;
+}
+.sidebar__menu-item.active {
+	padding-bottom: 0;
+}
+.social {
+	padding: 3px 5px 5px;
+	margin-top: 28px;
+}
+.social__text {
+	font-weight: bold;
+	font-size: $primary-font-size + 1;
+	vertical-align: middle;
+}
+.social__link,
+.social__link:hover {
+	text-decoration: none;
+	vertical-align: bottom;
+	display: inline-block;
+	margin: 0 3px;
+}
+@media (max-width: 1000px) {
+	.sidebar {
+		width: 25%;
+	}
+}

@@ -1,0 +1,11 @@
+.container {
+	max-width: $container-width-max;
+	min-width: $container-width-min;
+	margin: 0 auto;
+	@extend .clearfix;
+	padding: 0 5px;
+}
+.page {
+	@extend .clearfix;
+	margin-top: 5px;
+}

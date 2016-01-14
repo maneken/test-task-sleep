@@ -1,0 +1,118 @@
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    font-family: $primary-font-family;
+    font-size: $primary-font-size;
+    line-height: 1.42857143;
+    color: $primary-font-color;
+    background-color: $primary-page-bg;
+    font-weight: 300;
+}
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+a:hover {
+    color: $link_color-hover;
+    text-decoration: underline;
+}
+figure {
+    margin: 0;
+}
+img {
+    vertical-align: middle;
+}
+@font-face {
+    font-family: 'fontello';
+    src: url('font/fontello.eot?63009737');
+    src: url('font/fontello.eot?63009737#iefix') format('embedded-opentype'),
+       url('font/fontello.woff?63009737') format('woff'),
+       url('font/fontello.ttf?63009737') format('truetype'),
+       url('font/fontello.svg?63009737#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.ie .icon {
+    line-height: 1.6;
+}
+.icon-text,
+.ie .icon-text {
+    font-family: arial;
+    line-height: 1.3;
+    font-size: 11px;
+}
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #819ebc;
+    width: 100px;
+    height: 14px;
+    line-height: 14px;
+    font-size: $primary-font-size - 1;
+    padding: 0 1px;
+}
+button {
+    border: 0;
+    background: none;
+    width: 15px;
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+}
+.block {
+    display: block;
+}
+select {
+    color: #8e8e8e;
+    border: 1px solid #819ebc;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff url(images/select_arrow.png) no-repeat 106px 1px;
+    line-height: 1.3;
+}
+select::-ms-expand {
+    display: none;
+}
+input[type="button"]{
+    background: $secondary-color;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $primary-font-size + 5;
+    padding: 6px 26px;
+    letter-spacing: 1px;
+}
+p {
+    line-height: 1.6;
+}
